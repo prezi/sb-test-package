@@ -1,0 +1,1 @@
+-e git+http://github.com/pypa/pip-test-package.git#egg=pip-test-package

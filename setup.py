@@ -1,10 +1,10 @@
 from setuptools import setup, find_packages
 
-setup(name='pip-test-package',
+setup(name='sb-test-package',
     version='0.1.1',
-    author='PyPA',
-    author_email='pypa@pypa.pypa',
-    url='https://github.com/pypa',
+    author='Peter Neumark',
+    author_email='peter.neumark@prezi.com',
+    url='https://github.com/prezi',
     license='MIT',
     packages=find_packages(),
     zip_safe=False,
