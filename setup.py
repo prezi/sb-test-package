@@ -1,7 +1,7 @@
 from setuptools import setup, find_packages
 
 setup(name='sb-test-package',
-    version='0.2.0',
+    version='0.2.1',
     author='Peter Neumark',
     author_email='peter.neumark@prezi.com',
     url='https://github.com/prezi',
