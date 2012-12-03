@@ -1,1 +1,1 @@
--e git+http://github.com/pypa/pip-test-package.git@0.1.2#egg=pip-test-package
+-e git+http://github.com/prezi/sb-test-package.git@6144f78a13550a89d1012ee84e9bfd1ad04286b3#egg=pip-test-package
