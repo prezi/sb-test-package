@@ -1,6 +1,6 @@
 #!/bin/sh
 PIP_VERSION=c6fab6ac5424b18f5cbae9a0ca1aeedfe053a36a
-SB_VERSION=22a43c12047345c8724f803e4cc56a46af34846e
+SB_VERSION=8e2e91ef2c7d034fa45c8005e5217fec333808ee
 
 not_in_env_error() {
     echo "You are not currently in a python virtualenv."
