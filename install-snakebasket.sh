@@ -8,7 +8,7 @@ not_in_env_error() {
     exit 1
 }
 [ -z "${VIRTUAL_ENV:-}" ] && not_in_env_error
-if [ -f $VIRTUAL_ENV/bin/sb -a $(cd $VIRTUAL_ENV/src/snakebasket/ && git rev-parse HEAD) == $SB_VERSION ]; then
+if [ -f $VIRTUAL_ENV/bin/sb -a -d $VIRTUAL_ENV/src/snakebasket -a $(cd $VIRTUAL_ENV/src/snakebasket/ && git rev-parse HEAD) == $SB_VERSION ]; then
     echo "Snakebasket version $SB_VERSION already installed"
 else
     pip install -e git+http://github.com/pypa/pip.git@$PIP_VERSION#egg=pip -e git+git@github.com:prezi/snakebasket.git@$SB_VERSION#egg=snakebasket
