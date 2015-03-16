@@ -12,4 +12,5 @@ if [ -f $VIRTUAL_ENV/bin/sb -a -d $VIRTUAL_ENV/src/snakebasket -a "$(cd $VIRTUAL
     echo "Snakebasket version $SB_VERSION already installed"
 else
     pip install -e git+http://github.com/pypa/pip.git@$PIP_VERSION#egg=pip -e git+git@github.com:prezi/snakebasket.git@$SB_VERSION#egg=snakebasket
+    pip install prezi-setuputils
 fi
