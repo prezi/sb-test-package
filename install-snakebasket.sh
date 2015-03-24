@@ -13,4 +13,6 @@ if [ -f $VIRTUAL_ENV/bin/sb -a -d $VIRTUAL_ENV/src/snakebasket -a "$(cd $VIRTUAL
 else
     pip install -e git+http://github.com/pypa/pip.git@$PIP_VERSION#egg=pip -e git+git@github.com:prezi/snakebasket.git@$SB_VERSION#egg=snakebasket
     pip install prezi-setuputils==1.2
+    # Have to use <8.0, because it's incompatible with Snakebasket's pip version
+    pip install setuptools==7.0
 fi
